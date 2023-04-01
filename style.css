@@ -41,6 +41,7 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 .btn {
@@ -68,6 +69,11 @@ img {
   .btn {
     font-size: 2.5rem;
   }
+}
+
+.btn-sm {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 /* ************************************************************ */
@@ -209,5 +215,67 @@ h2 {
     top: -8rem;
     text-align: left;
     box-shadow: 0 0 6rem rgb(0, 0, 0, 0.3);
+  }
+}
+
+/* ************************************************************ */
+/* ****** SECTION PORTFOLIO *********************************** */
+/* ************************************************************ */
+
+.section-portfolio {
+  margin: 5rem 0;
+}
+
+.section-portfolio h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.port-item {
+  position: relative;
+}
+
+.port-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 0rem;
+  right: 0rem;
+  left: 0rem;
+  color: #fff;
+  background: rgb(0, 0, 0, 0.55);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.port-desc p {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 35em) {
+  .port-item {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .port-item {
+    width: calc(100% / 3);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .port-desc {
+    transform: translateY(150%);
+  }
+
+  .port-item:hover .port-desc {
+    transform: rotateY(0);
   }
 }
