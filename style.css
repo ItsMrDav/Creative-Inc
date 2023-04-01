@@ -1,0 +1,153 @@
+/* ************************************************************ */
+/* ****** GENERAL STYLES ************************************** */
+/* ************************************************************ */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  background: #fff;
+
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+::selection {
+  background-color: #149;
+  color: #fff;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: none;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.5rem 2.5rem;
+}
+
+.btn-accent {
+  color: #00ff6c;
+  border-color: #00ff6c;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: #00ff6c;
+  color: #232323;
+}
+
+@media only screen and (min-width: 60em) {
+  .btn {
+    font-size: 2.5rem;
+  }
+}
+
+/* ************************************************************ */
+/* ****** SECTION HEADER ************************************** */
+/* ************************************************************ */
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 2rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1.6rem;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 900;
+  padding: 0.8rem;
+  color: #fff;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #ccc;
+}
+
+@media only screen and (min-width: 60em) {
+  /* .logo {
+    float: left;
+  }
+
+  nav {
+    float: right;
+  } */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* ************************************************************ */
+/* ****** SECTION HERO **************************************** */
+/* ************************************************************ */
+
+.section-hero {
+  background-image: url(/img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 16rem 0;
+  color: #fff;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.title span {
+  display: block;
+  font-weight: 300;
+  font-size: 3.2rem;
+}
+
+@media only screen and (min-width: 60em) {
+  .section-hero {
+    height: 100vh;
+    padding-top: 35vh;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+}
