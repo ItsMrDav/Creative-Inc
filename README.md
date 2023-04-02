@@ -1,4 +1,4 @@
-# The Greaters
+# Creative Inc
 
 A single page website of a profesional photography company called Creative Inc, aiming to visible on web.
 
@@ -11,7 +11,7 @@ A single page website of a profesional photography company called Creative Inc, 
 ## Deployment
 
 
-[Creative Inc Link]([https://itsmrdav.github.io/The-Greaters](https://creativecorp.netlify.app/))
+[Creative Inc Link](https://itsmrdav.github.io/The-Greaters](https://creativecorp.netlify.app)
 ## Tech Stack
 
 **Client:** HTML, Vanilla CSS
